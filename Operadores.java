@@ -7,7 +7,7 @@ public class Operadores {
         var age = scanner.nextInt();
         System.out.println("Você é emancipado?");
         var isEmancipated = scanner.nextBoolean();
-        var canDrive = (age >= 18 || isEmancipated);
+        var canDrive = (age >= 18 || isEmancipated && age >= 16);
         System.out.printf("Você pode dirigir? (%s) \n", canDrive);
     }
 }
